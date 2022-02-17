@@ -1,8 +1,20 @@
 
 @import './variables'; 
 
+@import './media-queries';
+
 @import './index'; 
 
 @import './layout';
 
+@import './buttons'; 
+
 @import './fonts'; 
+
+@import './forms';
+
+
+//components
+
+@import './components/navbar.scss';
+@import './components/card';

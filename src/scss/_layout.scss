@@ -1,0 +1,39 @@
+.container {
+  max-width: $desktop;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.align-item-baseline {
+  align-items: baseline;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+@include screens(mobile) {
+  .container {
+    max-width: $mobile;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+.list-country {
+  margin-top: 48px;
+}
