@@ -27,6 +27,10 @@
 .gap-8 {
   gap: 8px;
 }
+
+.gap {
+  gap: 75px;
+}
 @include screens(mobile) {
   .container {
     max-width: $mobile;

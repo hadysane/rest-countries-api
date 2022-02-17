@@ -36,6 +36,10 @@ html {
   gap: 8px;
 }
 
+.gap {
+  gap: 75px;
+}
+
 @media (max-width: 376px) {
   .container {
     max-width: 376px;
@@ -127,6 +131,38 @@ h1, h2, h3, h4, h5, h6, p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0562443);
   background: white;
   color: #111517;
+}
+
+.card {
+  width: 264px;
+  background: #FFFFFF;
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.0294384);
+  border-radius: 5px;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  height: 160px;
+  position: relative;
+  box-sizing: border-box;
+  width: 264px;
+}
+.card-title {
+  padding: 0 24px 16px;
+}
+.card-body {
+  background-color: white;
+  padding-top: 16px;
+  padding-bottom: 46px;
+  border-radius: 5px;
+}
+.card-p {
+  padding-left: 24px;
+}
+.card-p p {
+  margin-bottom: 8px;
+}
+.card-p p:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
