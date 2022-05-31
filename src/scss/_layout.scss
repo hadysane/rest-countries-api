@@ -1,7 +1,10 @@
 .container {
   max-width: $desktop;
-  margin-left: 80px;
-  margin-right: 80px;
+  // margin-left: 80px;
+  // margin-right: 80px;
+
+   margin-left: auto;
+  margin-right: auto;
 }
 
 .d-flex {
@@ -31,13 +34,33 @@
 .gap {
   gap: 75px;
 }
+
 @include screens(mobile) {
   .container {
     max-width: $mobile;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
+@include screens(tablet-portrait) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@include screens(tablet-landscape) {
+  .container {
+    max-width: 650px;
+  }
+}
+
+@include screens(desktop-down){
+  .container {
+    max-width: 950px;
+  }
+}
+
 .list-country {
   margin-top: 48px;
 }

@@ -1,3 +1,5 @@
+
+
 .card {
   width: 264px;
   background: #FFFFFF;
@@ -33,5 +35,23 @@
         margin-bottom: 0;
       }
     }
+  }
+}
+
+@include screens(mobile){
+  .cards{
+    justify-content: center;
+  }
+}
+
+@include screens(tablet-landscape){
+  .cards{
+    justify-content: space-between;
+  }
+}
+
+@include screens(tablet-portrait){
+  .cards{
+    justify-content: center;
   }
 }

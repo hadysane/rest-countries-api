@@ -43,6 +43,28 @@
   }
 }
 
+@include screens (tablet-landscape) {
+  .search {
+    width: 343px;
+    margin-bottom: 40px;
+
+    & input[type="text"] {
+      padding-left: 26px;
+    }
+  }
+}
+
+@include screens (tablet-portrait) {
+  .search {
+    width: 343px;
+    margin-bottom: 40px;
+
+    & input[type="text"] {
+      padding-left: 26px;
+    }
+  }
+}
+
 /// Dropdown select
 
 .dropdown_filter {

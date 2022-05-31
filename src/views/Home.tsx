@@ -17,7 +17,7 @@ const Home = () => {
                     <Dropdown/>
                 </div>
 
-                <div className="d-flex justify-content-between list-country flex-wrap gap">
+                <div className="cards d-flex justify-content-between list-country flex-wrap gap">
                     <CardCountry />
                     <CardCountry />
                     <CardCountry />
