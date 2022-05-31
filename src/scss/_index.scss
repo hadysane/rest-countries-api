@@ -6,6 +6,11 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 /* ----------------------------------------------- Dark mode --------------------------------------------------  */
 body.dark-mode {
   background-color: $bg-dark-mode;
@@ -15,9 +20,15 @@ body.dark-mode {
     background: $element-dark-mode !important;
   }
 
+   
+
   .navbar {
     background: $element-dark-mode !important;
     color: $text-dark-mode !important;
+
+   a .nav-link{
+      color: $text-dark-mode !important;
+    }
 
     .btn {
       color: $text-dark-mode;

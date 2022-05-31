@@ -1,9 +1,6 @@
 .container {
   max-width: $desktop;
-  // margin-left: 80px;
-  // margin-right: 80px;
-
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -38,8 +35,8 @@
 @include screens(mobile) {
   .container {
     max-width: $mobile;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
