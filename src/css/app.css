@@ -1,9 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
-body,
-html {
+body {
   margin: 0;
   padding: 0;
   background: #fafafa;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------- Dark mode --------------------------------------------------  */
+body.dark-mode {
+  background-color: #202c37;
+  color: white;
+}
+body.dark-mode .card {
+  background: #2b3945 !important;
+}
+body.dark-mode .navbar {
+  background: #2b3945 !important;
+  color: white !important;
+}
+body.dark-mode .navbar .btn {
+  color: white;
+}
+body.dark-mode .search {
+  background: #2b3945 !important;
+  color: white !important;
+}
+body.dark-mode .search input {
+  background: #2b3945 !important;
+  color: white !important;
+}
+body.dark-mode .search input::placeholder {
+  color: white;
+}
+body.dark-mode .search svg {
+  color: white !important;
+}
+body.dark-mode .dropdown {
+  background: #2b3945 !important;
+  color: white !important;
+}
+body.dark-mode .dropdown-list {
+  background: #2b3945 !important;
+  color: white !important;
 }
 
 .container {
@@ -84,10 +122,10 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 15px 20px;
   width: 480px;
   font-weight: 400;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.0532439);
 }
 .search-light {
   background: white;
-  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.0532439);
   border-radius: 5px;
   color: #858585;
 }
@@ -126,11 +164,15 @@ h1, h2, h3, h4, h5, h6, p {
 .navbar {
   padding: 16px 0;
   margin-bottom: 48px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0562443);
 }
 .navbar-light {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0562443);
   background: white;
   color: #111517;
+}
+.navbar-dark {
+  background: #2b3945;
+  color: white;
 }
 
 .card {
@@ -150,7 +192,6 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0 24px 16px;
 }
 .card-body {
-  background-color: white;
   padding-top: 16px;
   padding-bottom: 46px;
   border-radius: 5px;

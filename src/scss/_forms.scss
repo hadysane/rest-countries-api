@@ -4,10 +4,10 @@
   padding: 15px 20px;
   width: 480px;
   font-weight: 400;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.0532439);
 
   &-light {
     background: $white;
-    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.0532439);
     border-radius: 5px;
     color: $dark-gray;
   }
@@ -49,6 +49,7 @@
   position: relative;
 
   & select {
-    display: none; /*hide original SELECT element: */
+    display: none;
+    /*hide original SELECT element: */
   }
 }

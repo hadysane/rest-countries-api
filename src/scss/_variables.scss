@@ -9,9 +9,17 @@ $very-light-gray: hsl(0, 0%, 98%); //(Light Mode Background)
 $white: hsl(0, 0%, 100%); // (Dark Mode Text & Light Mode Elements)
 
 // font
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
 // Layout
 
-$mobile : 376px;
-$desktop: 1440px; 
+$mobile: 376px;
+$desktop: 1440px;
+
+//theme dark 
+
+$bg-dark-mode: $dark-blue-bgd;
+$text-dark-mode: $white;
+$element-dark-mode:$dark-blue; 
+
+

@@ -1,5 +1,7 @@
-import React from 'react'
-import { BiMoon } from 'react-icons/bi'
+import React from 'react';
+
+
+import ThemeChanger from './ThemeChanger';
 
 const Navbar = () => {
     return (
@@ -7,7 +9,7 @@ const Navbar = () => {
             <div className='container d-flex justify-content-between align-item-center'>
                 <p className='w-800'>Where in the world?</p>
 
-                <button className='btn d-flex align-item-center gap-8'> <BiMoon/>  Dark Mode</button>
+               <ThemeChanger />
             </div>
             
         </nav>
