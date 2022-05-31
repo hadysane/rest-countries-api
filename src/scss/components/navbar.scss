@@ -1,0 +1,16 @@
+.navbar {
+  padding: 16px 0;
+  margin-bottom: 48px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0562443);
+
+  &-light {
+    background: $white;
+    color: $dark-blue-text;
+  }
+
+  &-dark {
+    background: $element-dark-mode;
+    color: $text-dark-mode;
+  }
+
+}

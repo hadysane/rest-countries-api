@@ -1,5 +1,53 @@
-body,
-html {
+body {
   margin: 0;
   padding: 0;
+  background: $very-light-gray;
+  // max-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------- Dark mode --------------------------------------------------  */
+body.dark-mode {
+  background-color: $bg-dark-mode;
+  color: $text-dark-mode;
+
+  .card {
+    background: $element-dark-mode !important;
+  }
+
+  .navbar {
+    background: $element-dark-mode !important;
+    color: $text-dark-mode !important;
+
+    .btn {
+      color: $text-dark-mode;
+    }
+  }
+
+  .search {
+    background: $element-dark-mode !important;
+    color: $text-dark-mode !important;
+
+    & input {
+      background: $element-dark-mode !important;
+      color: $text-dark-mode !important;
+    }
+
+    & input::placeholder {
+      color: $text-dark-mode;
+    }
+
+    & svg {
+      color: $text-dark-mode !important;
+    }
+  }
+  .dropdown{
+    background: $element-dark-mode !important;
+    color: $text-dark-mode !important;
+
+    &-list {
+       background: $element-dark-mode !important;
+        color: $text-dark-mode !important;
+    }
+  }
 }

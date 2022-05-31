@@ -1,7 +1,258 @@
-body,
-html {
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+body {
   margin: 0;
   padding: 0;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------- Dark mode --------------------------------------------------  */
+body.dark-mode {
+  background-color: #202c37;
+  color: white;
+}
+body.dark-mode .card {
+  background: #2b3945 !important;
+}
+body.dark-mode .navbar {
+  background: #2b3945 !important;
+  color: white !important;
+}
+body.dark-mode .navbar .btn {
+  color: white;
+}
+body.dark-mode .search {
+  background: #2b3945 !important;
+  color: white !important;
+}
+body.dark-mode .search input {
+  background: #2b3945 !important;
+  color: white !important;
+}
+body.dark-mode .search input::placeholder {
+  color: white;
+}
+body.dark-mode .search svg {
+  color: white !important;
+}
+body.dark-mode .dropdown {
+  background: #2b3945 !important;
+  color: white !important;
+}
+body.dark-mode .dropdown-list {
+  background: #2b3945 !important;
+  color: white !important;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.align-item-baseline {
+  align-items: baseline;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap {
+  gap: 75px;
+}
+
+@media (min-width: 200px) and (max-width: 420px) {
+  .container {
+    max-width: 343px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 420px) and (max-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+}
+@media (min-width: 600px) and (max-width: 920px) {
+  .container {
+    max-width: 650px;
+  }
+}
+@media (min-width: 920px) and (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+}
+.list-country {
+  margin-top: 48px;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+}
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.w-300 {
+  font-weight: 300;
+}
+
+.w-600 {
+  font-weight: 600;
+}
+
+.w-800 {
+  font-weight: 800;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  width: 480px;
+  font-weight: 400;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+.search-light {
+  background: white;
+  border-radius: 5px;
+  color: #858585;
+}
+.search-light svg {
+  color: #858585;
+}
+.search svg {
+  font-size: 18px;
+}
+.search input[type=text] {
+  border: none;
+  padding-left: 24px;
+  width: 100%;
+}
+.search input[type=text]:focus {
+  outline: none;
+}
+
+@media (min-width: 200px) and (max-width: 420px) {
+  .search {
+    width: 343px;
+    margin-bottom: 40px;
+  }
+  .search input[type=text] {
+    padding-left: 26px;
+  }
+}
+@media (min-width: 600px) and (max-width: 920px) {
+  .search {
+    width: 343px;
+    margin-bottom: 40px;
+  }
+  .search input[type=text] {
+    padding-left: 26px;
+  }
+}
+@media (min-width: 420px) and (max-width: 600px) {
+  .search {
+    width: 343px;
+    margin-bottom: 40px;
+  }
+  .search input[type=text] {
+    padding-left: 26px;
+  }
+}
+.dropdown_filter {
+  position: relative;
+}
+.dropdown_filter select {
+  display: none;
+  /*hide original SELECT element: */
+}
+
+.navbar {
+  padding: 16px 0;
+  margin-bottom: 48px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+.navbar-light {
+  background: white;
+  color: #111517;
+}
+.navbar-dark {
+  background: #2b3945;
+  color: white;
+}
+
+.card {
+  width: 264px;
+  background: #FFFFFF;
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.0294384);
+  border-radius: 5px;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  height: 160px;
+  position: relative;
+  box-sizing: border-box;
+  width: 264px;
+}
+.card-title {
+  padding: 0 24px 16px;
+}
+.card-body {
+  padding-top: 16px;
+  padding-bottom: 46px;
+  border-radius: 5px;
+}
+.card-p {
+  padding-left: 24px;
+}
+.card-p p {
+  margin-bottom: 8px;
+}
+.card-p p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 200px) and (max-width: 420px) {
+  .cards {
+    justify-content: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 920px) {
+  .cards {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 420px) and (max-width: 600px) {
+  .cards {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

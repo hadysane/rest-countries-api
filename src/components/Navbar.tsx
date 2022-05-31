@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
+
+
+import ThemeChanger from './ThemeChanger';
 
 const Navbar = () => {
     return (
-        <div>
-            <p>Where in the world?</p>
+        <nav className="navbar navbar-light">
+            <div className='container d-flex justify-content-between align-item-center'>
+                <p className='w-800'>Where in the world?</p>
 
-            <button> Dark Mode</button>
-        </div>
+               <ThemeChanger />
+            </div>
+            
+        </nav>
     )
 }
 
