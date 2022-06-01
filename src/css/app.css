@@ -68,6 +68,10 @@ body.dark-mode .dropdown-list {
   flex-wrap: wrap;
 }
 
+.justify-content-around {
+  justify-content: space-around;
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
@@ -280,6 +284,39 @@ p {
     display: flex;
     justify-content: center;
   }
+}
+.link {
+  font-size: 16px;
+  margin-top: 90px;
+}
+.link span {
+  margin-left: 10px;
+}
+
+.country {
+  margin-top: 90px;
+  display: flex;
+}
+.country-infos {
+  padding-top: 40px;
+  margin-left: 120px;
+  min-width: 598px;
+}
+.country-infos h1 {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+.country-infos--title {
+  font-weight: 600;
+}
+.country-infos_left, .country-infos_right {
+  font-size: 16px;
+  line-height: 32px;
+}
+.country-flag img {
+  min-width: 560px;
+  min-height: 401px;
 }
 
 /*# sourceMappingURL=app.css.map */

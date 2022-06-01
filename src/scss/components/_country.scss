@@ -1,0 +1,41 @@
+.link{
+    font-size: 16px;
+    margin-top: 90px;
+    span{
+        margin-left: 10px;
+    }
+
+}
+
+.country{
+    margin-top: 90px;
+    display: flex;
+
+    &-infos {
+        padding-top: 40px;
+        margin-left: 120px;
+        min-width: 598px;
+        h1 {
+            font-weight: 800;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+        
+        &--title {
+            font-weight: 600;
+        }
+    }
+
+    &-infos_left, &-infos_right{
+        
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    &-flag{
+       & img {
+           min-width: 560px;
+           min-height: 401px;
+       }
+    }
+}
