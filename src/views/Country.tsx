@@ -12,12 +12,12 @@ const Country = () => {
 
             <div className='country d-flex'>
                 <div className='country-flag'>
-                    <img className='card-img' src={img} alt="flag" />
+                    <img  src={img} alt="flag" />
                 </div>
 
                 <div className='country-infos'>
                     <h1>Belgium</h1>
-                    <div className="d-flex justify-content-between flex-wrap">
+                    <div className="d-flex justify-content-between flex-wrap country-infos-contain">
                         <div className='country-infos_left'>
                             <p><span className='country-infos--title'>Native Name:</span> België</p>
                             <p><span className='country-infos--title'>Population:</span> 11, 319,511 </p>
@@ -33,8 +33,14 @@ const Country = () => {
                         </div>
                     </div>
 
-                    <div className='border-Countries'>
-                        
+                    <div className='border-countries'>
+                        <p className='border-countries--title'>Border Countries:</p>
+
+                        <div className='tags'>
+                            <Link className="tag" to={"/France"} >France</Link>
+                            <Link className="tag" to={"/France"} > Luxembourg </Link>
+                            <Link className="tag" to={"/France"} > Belgium </Link>
+                        </div>
                     </div>
 
                 </div>

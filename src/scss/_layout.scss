@@ -39,26 +39,32 @@
 @include screens(mobile) {
   .container {
     max-width: $mobile;
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 28px;
+    padding-right: 27px;
   }
 }
 
 @include screens(tablet-portrait) {
   .container {
     max-width: 500px;
+    padding-left: 28px;
+    padding-right: 27px;
   }
 }
 
 @include screens(tablet-landscape) {
   .container {
     max-width: 650px;
+    padding-left: 28px;
+    padding-right: 27px;
   }
 }
 
 @include screens(desktop-down){
   .container {
     max-width: 950px;
+    padding-left: 28px;
+    padding-right: 27px;
   }
 }
 
