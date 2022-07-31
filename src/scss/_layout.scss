@@ -1,9 +1,6 @@
 .container {
   max-width: $desktop;
-  // margin-left: 80px;
-  // margin-right: 80px;
-
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -13,6 +10,10 @@
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.justify-content-around {
+  justify-content: space-around;
 }
 
 .justify-content-between {
@@ -38,26 +39,32 @@
 @include screens(mobile) {
   .container {
     max-width: $mobile;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 28px;
+    padding-right: 27px;
   }
 }
 
 @include screens(tablet-portrait) {
   .container {
     max-width: 500px;
+    padding-left: 28px;
+    padding-right: 27px;
   }
 }
 
 @include screens(tablet-landscape) {
   .container {
     max-width: 650px;
+    padding-left: 28px;
+    padding-right: 27px;
   }
 }
 
 @include screens(desktop-down){
   .container {
     max-width: 950px;
+    padding-left: 28px;
+    padding-right: 27px;
   }
 }
 

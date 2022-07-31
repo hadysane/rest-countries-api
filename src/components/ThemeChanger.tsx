@@ -1,5 +1,5 @@
 import {useEffect} from 'react'
-import { BiMoon } from 'react-icons/bi';
+import { BsMoon, BsMoonFill } from 'react-icons/bs';
 import { useLocalStorage } from 'usehooks-ts'
 
 const ThemeChanger = () => {
@@ -19,7 +19,7 @@ const ThemeChanger = () => {
 
     return (
         <>
-            <button onClick={handleChange} className='btn d-flex align-item-center gap-8'> <BiMoon />  Dark Mode</button>
+            <div onClick={handleChange} className='btn d-flex align-item-center gap-8'> {isDarkTheme ?  <BsMoonFill/>   : <BsMoon /> }  Dark Mode</div>
         </>
        
   )

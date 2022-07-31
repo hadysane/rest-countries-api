@@ -14,3 +14,9 @@
   }
 
 }
+
+@include screens(mobile){
+  .navbar{
+      margin-bottom: 24px;
+  }
+}

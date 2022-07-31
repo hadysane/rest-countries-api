@@ -40,18 +40,21 @@
 
 @include screens(mobile){
   .cards{
+    display: flex;
     justify-content: center;
   }
 }
 
 @include screens(tablet-landscape){
   .cards{
+    display: flex;
     justify-content: space-between;
   }
 }
 
 @include screens(tablet-portrait){
   .cards{
+    display: flex;
     justify-content: center;
   }
 }
