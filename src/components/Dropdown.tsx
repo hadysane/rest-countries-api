@@ -69,11 +69,8 @@ const Dropdown = () => {
     const options = ["Mangoes", "Apples", "Oranges"];
 
     const onOptionClicked = (value: any) => () => {
-        
       setSelectedOption(value);
       setIsOpen(false);
-      console.log(selectedOption);
-
     };
 
     //add click for toggling the boolean to either true or false as shown below.

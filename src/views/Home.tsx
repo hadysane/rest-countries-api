@@ -2,40 +2,31 @@ import { BiSearchAlt2 } from 'react-icons/bi'
 import Dropdown from '../components/Dropdown';  
 import CardCountry from '../components/CardCountry';
 import { Link } from 'react-router-dom';
-import img from '../img/germany.png';
-const countriesData = [
-    {
-        id: 1,
-        name: "Germany",
-        population: "81,770,900", 
-        region: "Europe",
-        capital: "Berlin",
-        img: img
-    },  {
-        id: 2,
-        name: "France",
-        population: "81,770,900", 
-        region: "Europe",
-        capital: "Berlin",
-        img: img
-    }, {
-        id: 3,
-        name: "Germany",
-        population: "81,770,900", 
-        region: "Europe",
-        capital: "Berlin",
-        img: img
-    },  {
-        id: 4,
-        name: "Germany",
-        population: "81,770,900", 
-        region: "Europe",
-        capital: "Berlin",
-        img: img
-    }, 
-]
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import Country from '../types/countries.types';
+
+const client = axios.create({
+    baseURL: 'https://restcountries.com/v3.1',  
+})
+
+
 
 const Home = () => {
+    const [countriesData, setCountries] = useState<Country[]>([]);
+
+    const getAllCountries = async () => {
+        await client.get('/all').then((response) => {
+            setCountries(response.data);
+        }).catch((error) => {
+            console.error('Error:', error);
+          });
+    }
+
+    useEffect(() => {
+       getAllCountries()
+    }, [])
+
     return (
         <div className='container'>
             <div className='d-flex justify-content-between align-item-baseline flex-wrap'>
@@ -47,9 +38,9 @@ const Home = () => {
             </div>
 
             <div className="cards d-flex justify-content-between list-country flex-wrap gap">
-                {countriesData.map(function (country, key)  {
-                    return <Link to={country.name} key={key}>
-                        <CardCountry country={country} key={key} />
+                {countriesData.map(function (country)  {
+                    return <Link to={country.name.common} key={ country.name.common }>
+                        <CardCountry country={country } />
                     </Link>
                 })}
                 
